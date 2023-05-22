@@ -1,3 +1,4 @@
+import 'package:example/test.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -31,6 +32,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   final tc = TextEditingController();
+  // final tc = MarkupEditingController();
 
   @override
   void initState() {
@@ -61,7 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             Expanded(
-              child: SizedBox(),
+              child: MarkupText(controller: tc),
             ),
           ],
         ),

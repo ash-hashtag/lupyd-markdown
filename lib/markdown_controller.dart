@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'build_text_span.dart';
+
 class MarkdownTextEditingController extends TextEditingController {
   @override
   TextSpan buildTextSpan({
@@ -58,8 +60,3 @@ class _SpoilerSpanState extends State<SpoilerSpan> {
   }
 }
 
-List<InlineSpan> buildTextSpanChildren(String text) {
-  final children = <InlineSpan>[];
-
-  return children;
-}
